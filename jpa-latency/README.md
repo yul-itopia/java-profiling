@@ -1,10 +1,10 @@
-# Latency Caused by JDBC
+# Latency Caused by JPA
 
-## Project ``` jdbc-latency ```
+## Project ``` jpa-latency ```
 
-### Profiling to find out invocation count of a SQL query
+### Profiling to find out invocation count of a JPA query
 
-- ``` $ java -Xms32M -Xmx32M -jar target/jdbc-latency-2022.03-SNAPSHOT.jar ```
+- ``` $ java -Xms32M -Xmx32M -jar target/jpa-latency-2022.03-SNAPSHOT.jar ```
 - Starts JProfiler
   - Enabling Native Methods Instrumentation (profiling & more expensive)
   - Database / JDBC / Call Tree

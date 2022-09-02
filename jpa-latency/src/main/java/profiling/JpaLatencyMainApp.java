@@ -6,9 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class JdbcQueriesMainApp {
+public class JpaLatencyMainApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(JdbcQueriesMainApp.class, args);
+        SpringApplication.run(JpaLatencyMainApp.class, args);
     }
+
 }

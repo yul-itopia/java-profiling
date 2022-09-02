@@ -1,10 +1,10 @@
-# Find out the root cause of latency
+# Latency Caused by HTTP
 
-## Project ``` latency ```
+## Project ``` http-latency ```
 
 ### Sampling to find out which method cause the latency
 
--  ``` $ java -Xms32M -Xmx32M -jar target/latency-2022.03-SNAPSHOT.jar ```
+-  ``` $ java -Xms32M -Xmx32M -jar target/http-latency-2022.03-SNAPSHOT.jar ```
 - Starts JProfiler
   * Enabling Native Methods Instrumentation (profiling & more expensive)
   * CPU Views / Call Tree
@@ -13,4 +13,4 @@
 ### Profiling to find out invocation count of a method
 
 - CPU Views / Hot Spots
-- Filter ``` java.net.HttpURLConnection ```
+- Filter ``` java.net.HttpURLConnection ```~~~~~~~~

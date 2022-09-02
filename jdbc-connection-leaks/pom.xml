@@ -12,32 +12,22 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>http-latency</artifactId>
+    <artifactId>jdbc-connection-leaks</artifactId>
     <packaging>jar</packaging>
-    <name>http-latency</name>
-    <description>http-latency</description>
-
-    <dependencyManagement>
-
-        <dependencies>
-
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-        </dependencies>
-
-    </dependencyManagement>
+    <name>jdbc-connection-leaks</name>
+    <description>jdbc-connection-leaks</description>
 
     <dependencies>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
@@ -58,7 +48,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>profiling.HttpLatencyMainApp</mainClass>
+                            <mainClass>profiling.JdbcConnectionLeaksMainApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

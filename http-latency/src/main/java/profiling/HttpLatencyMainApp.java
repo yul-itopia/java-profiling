@@ -14,10 +14,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * curl -s -w '\nTotal: %{time_total}s\n' http://127.0.0.1:8080/api/latency/demo/5
  */
 @SpringBootApplication
-public class LatencyMainApp {
+public class HttpLatencyMainApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(LatencyMainApp.class, args);
+        SpringApplication.run(HttpLatencyMainApp.class, args);
     }
 
 }

@@ -73,6 +73,8 @@
     <modules>
         <module>http-latency</module>
         <module>jdbc-latency</module>
+        <module>jpa-latency</module>
+        <module>jdbc-connection-leaks</module>
     </modules>
 
 </project>
