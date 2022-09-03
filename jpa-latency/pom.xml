@@ -49,7 +49,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>profiling.JpaLatencyMainApp</mainClass>
+                            <mainClass>com.tecsys.jvm.profiling.JpaLatencyMainApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

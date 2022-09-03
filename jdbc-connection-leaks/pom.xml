@@ -48,7 +48,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>profiling.JdbcConnectionLeaksMainApp</mainClass>
+                            <mainClass>com.tecsys.jvm.profiling.JdbcConnectionLeaksMainApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

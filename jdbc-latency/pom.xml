@@ -48,7 +48,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>profiling.JdbcLatencyMainApp</mainClass>
+                            <mainClass>com.tecsys.jvm.profiling.JdbcLatencyMainApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
